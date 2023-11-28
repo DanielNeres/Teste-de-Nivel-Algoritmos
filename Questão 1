@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(void)
+{
+	int Quantiadedovetor;
+	scanf("%d", &Quantiadedovetor);
+	int vetor[Quantiadedovetor];
+}
