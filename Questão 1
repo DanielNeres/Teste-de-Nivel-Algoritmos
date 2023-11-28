@@ -1,7 +1,11 @@
 #include <stdio.h>
 int main(void)
 {
-	int Quantiadedovetor;
+	int Quantiadedovetor, i;
 	scanf("%d", &Quantiadedovetor);
 	int vetor[Quantiadedovetor];
+	for(i = 1; i <= Quantiadedovetor; Quantiadedovetor--){
+		vetor[Quantiadedovetor - 1] = Quantiadedovetor;
+		printf("%d\n\n", vetor[Quantiadedovetor - 1]);
+	}
 }
