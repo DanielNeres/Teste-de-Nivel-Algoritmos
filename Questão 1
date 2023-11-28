@@ -4,8 +4,14 @@ int main(void)
 	int Quantiadedovetor, i;
 	scanf("%d", &Quantiadedovetor);
 	int vetor[Quantiadedovetor];
-	for(i = 1; i <= Quantiadedovetor; Quantiadedovetor--){
-		vetor[Quantiadedovetor - 1] = Quantiadedovetor;
-		printf("%d\n\n", vetor[Quantiadedovetor - 1]);
+	for(i = 0; i < Quantiadedovetor; i++){
+		vetor[i] = i;
+		printf("%d\n\n", vetor[i]);
 	}
+	for (i = 0; i < Quantiadedovetor; i ++){
+		vetor[i] = vetor[(Quantiadedovetor - i) - 1];
+		printf("ao contrario %d", vetor[i]);
+		printf("         %d            %d\n", i, Quantiadedovetor);
+	}
+	return 0;
 }
