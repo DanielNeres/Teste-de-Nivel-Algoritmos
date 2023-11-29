@@ -2,15 +2,19 @@
 
 int main()
 {
-	int numero1, numero2, numeromaior, numeromenor; 
+	int numero1, numero2, numeromaior, numeromenor, soma = 0; 
 	scanf("%d", &numero1);
 	scanf("%d", &numero2);
 	if (numero1 > numero2){
-		numero1 = numeromaior;
-		numero2 = numeromenor;
+		numeromaior = numero1;
+		numeromenor = numero2;
 	}else{
-		numero2 = numeromaior;
-		numero1 = numeromenor;
+		numeromaior = numero2;
+		numeromenor = numero1;
 	}
+	for(numeromenor += 1;numeromenor < numeromaior; numeromenor++){
+		soma += numeromenor;
+	}
+	printf("\nsoma = %d", soma);
 	return 0;
 }
