@@ -4,4 +4,4 @@ No primeiro laço onde i = 1, e como multiplicação no printf é 2*i a saída s
 No segundo laço o i *= 100, ou seja, i = 100, e no printf onde 2*i a saída será 200 
 200 
 
-Após isso não o laço se encerra.
+Após isso o laço se encerra.
