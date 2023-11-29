@@ -5,7 +5,9 @@ int somaentre2inteiros(int numeromenorLocal, int numeromaiorLocal);
 int main()
 {
 	int numero1, numero2, numeromaior, numeromenor, soma = 0; 
+	printf("digite o primeiro numero\n");
 	scanf("%d", &numero1);
+	printf("digite o segundo numero\n");
 	scanf("%d", &numero2);
 	if (numero1 > numero2){
 		numeromaior = numero1;
@@ -18,7 +20,7 @@ int main()
 	for(numeromenor += 1;numeromenor < numeromaior; numeromenor++){
 		soma += numeromenor;
 	}
-	printf("\nsoma = %d", soma);
+	printf("\nsoma entre os dois numeros = %d", soma);
 	return 0;
 }
 int somaentre2inteiros(int numeromenorLocal, int numeromaiorLocal){
