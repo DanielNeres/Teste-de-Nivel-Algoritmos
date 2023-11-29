@@ -1,0 +1,7 @@
+int N_ant , N_prox , N , N_atual // não tem o ponto e virgula 
+
+for( i =1 ,i <= N , i ++) { // não se usa virgula no for, mas sim ponto e virgula 
+
+// está faltando um fecha chaves no for    
+
+return // não retorna nada 
