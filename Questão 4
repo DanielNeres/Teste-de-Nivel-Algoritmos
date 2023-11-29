@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int somaentre2inteiros();
+
 int main()
 {
 	int numero1, numero2, numeromaior, numeromenor, soma = 0; 
@@ -12,9 +14,17 @@ int main()
 		numeromaior = numero2;
 		numeromenor = numero1;
 	}
+	somaentre2inteiros(numeromenor, numeromaior);
 	for(numeromenor += 1;numeromenor < numeromaior; numeromenor++){
 		soma += numeromenor;
 	}
 	printf("\nsoma = %d", soma);
 	return 0;
+}
+int somaentre2inteiros(int numeromenorLocal, int numeromaiorLocal){
+	int somaLocal;
+	for(numeromenorLocal += 1;numeromenorLocal < numeromaiorLocal; numeromenorLocal++){
+		somaLocal += numeromenorLocal;
+	}
+	return somaLocal;
 }
