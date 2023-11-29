@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+	int numero1, numero2, numeromaior, numeromenor; 
+	scanf("%d", &numero1);
+	scanf("%d", &numero2);
+	if (numero1 > numero2){
+		numero1 = numeromaior
+		numero2 = numeromenor
+	}else{
+		numero2 = numeromaior
+		numero1 = numeromenor
+	}
+	return 0;
+}
