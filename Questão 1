@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-int invertervetor();
+int invertervetor(int Quantiadedovetor, int vetor[], int i);
 
 int main(){
 	int Quantiadedovetor, i = 0;
+	printf("digite o tamanho do vetor\n");
 	scanf("%d", &Quantiadedovetor);
 	int vetor[Quantiadedovetor], novovetor[Quantiadedovetor];
 	for(i = 0; i < Quantiadedovetor; i++){
+		printf("digite o valor na posicao %d \n", i);
 		scanf("%d", &vetor[i]);
 	}
 	for (i = 0; i < Quantiadedovetor; i ++){
