@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int somaentre2inteiros();
+int somaentre2inteiros(int numeromenorLocal, int numeromaiorLocal);
 
 int main()
 {
