@@ -6,27 +6,24 @@ int main()
 {
 	int numero1, numero2, numeromaior, numeromenor, soma = 0; 
 	printf("digite o primeiro numero\n");
-	scanf("%d", &numero1);
+	scanf("%d", &numero1); // recebimento da primeira variavel
 	printf("digite o segundo numero\n");
-	scanf("%d", &numero2);
-	if (numero1 > numero2){
+	scanf("%d", &numero2); // recebimento da segunda variavel
+	if (numero1 > numero2){ // comparação entre elas, afim de saber qual e a maior
 		numeromaior = numero1;
 		numeromenor = numero2;
 	}else{
 		numeromaior = numero2;
 		numeromenor = numero1;
 	}
-	somaentre2inteiros(numeromenor, numeromaior);
-	for(numeromenor += 1;numeromenor < numeromaior; numeromenor++){
-		soma += numeromenor;
-	}
-	printf("\nsoma entre os dois numeros = %d", soma);
+	soma = somaentre2inteiros(numeromenor, numeromaior); // chama a função somaentre2inteiros e a atribui sua saida a variavel soma 
+	printf("\nsoma entre os dois numeros = %d", soma); // imprime o resultado
 	return 0;
 }
 int somaentre2inteiros(int numeromenorLocal, int numeromaiorLocal){
-	int somaLocal;
-	for(numeromenorLocal += 1;numeromenorLocal < numeromaiorLocal; numeromenorLocal++){
-		somaLocal += numeromenorLocal;
+	int somaLocal = 0;
+	for(numeromenorLocal += 1;numeromenorLocal < numeromaiorLocal; numeromenorLocal++){ // inicia o for que percorre todos os numeros entre esses dois valores
+		somaLocal += numeromenorLocal; // soma todos os valores percorridos na variavel soma local
 	}
-	return somaLocal;
+	return somaLocal; // retorna essa soma 
 }
