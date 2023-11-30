@@ -1,24 +1,24 @@
 #include <stdio.h>
 
-int invertervetor(int Quantiadedovetor, int vetor[], int i);
+int invertervetor(int QuantiadedovetorLocal, int vetorLocal[], int iLocal);
 
 int main(){
 	int Quantiadedovetor, i = 0;
 	printf("digite o tamanho do vetor\n");
-	scanf("%d", &Quantiadedovetor);
-	int vetor[Quantiadedovetor], novovetor[Quantiadedovetor];
-	for(i = 0; i < Quantiadedovetor; i++){
+	scanf("%d", &Quantiadedovetor); // Define a o tamanho do vetor
+	int vetor[Quantiadedovetor], novovetor[Quantiadedovetor]; // Criação dos vetores usados 
+	for(i = 0; i < Quantiadedovetor; i++){ // Declaração de um for que percorre todos as posições do vetor
 		printf("digite o valor na posicao %d \n", i);
-		scanf("%d", &vetor[i]);
+		scanf("%d", &vetor[i]); // recebe o valor na posição i
 	}
-	for (i = 0; i < Quantiadedovetor; i ++){
-		novovetor[i] = invertervetor(Quantiadedovetor, vetor, i);
-		printf("\n%d", novovetor[i]);
+	for (i = 0; i < Quantiadedovetor; i ++){ // Declaração de um for que percorre todos as posições do vetor
+		novovetor[i] = invertervetor(Quantiadedovetor, vetor, i); // chama a função invertervetor e atribui sua saida a variavel novo vetor na posição i
+		printf("\n%d", novovetor[i]); // imprime valor do vetor na posição i
 	}
 	return 0;
 }
-int invertervetor(int Quantiadedovetor, int vetor[], int i){
+int invertervetor(int QuantiadedovetorLocal, int vetorLocal[], int iLocal){
 	int N;
-	N = vetor[(Quantiadedovetor - i) - 1];
-	return N;
+	N = vetorLocal[(QuantiadedovetorLocal - iLocal) - 1]; // atribui o valor do vetor na posição(QuantiadedovetorLocal - iLocal) a variavel N, o -1 por causa que o vetor inicia na posição 0, ao inves da 1
+	return N; // retorna a variavel N, ou seja, o valor do vetor na posição(QuantiadedovetorLocal - iLocal) - 1
 }
